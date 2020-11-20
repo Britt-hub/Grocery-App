@@ -55,4 +55,8 @@
  footer.page-footer {
    margin: 0;
  }
+
+ #btn-start-list {
+   position: relative;
+ }
  
