@@ -1,0 +1,38 @@
+body{
+    background-color: #b8e7f2;
+    font-family: "Arimo";
+
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+}
+
+.title {
+    text-align: center;
+    color: navy;
+
+}
+
+.form {
+    margin-left: 5%;
+
+}
+
+svg {
+    color: navy;
+    float: left;
+
+}
+
+input {
+ background-color: #cbe7ed;
+ float: left;
+ outline:  0;
+ border: 0px solid;
+ border-bottom-color: navy;
+ border-bottom-width: 3px;
+ padding-right: 200px;
+ font-size: large;
+}

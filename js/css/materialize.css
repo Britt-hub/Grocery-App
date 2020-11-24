@@ -5629,7 +5629,7 @@
    * https://github.com/fians/Waves/blob/master/LICENSE
    */
   .waves-effect {
-    
+    margin: 0 0 62px 0;
     position: relative;
     cursor: pointer;
     display: inline-block;
