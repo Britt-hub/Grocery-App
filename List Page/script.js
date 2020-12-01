@@ -40,7 +40,7 @@ function trashList() {
         list.removeChild(list.childNodes[i]);
     }
 }
-
+// figure out how to archive user's list by saving it via local storage. This will be helpful when internet is slow or down. 
 function archiveList() {
     var list = document.getElementById("all-items");
 
