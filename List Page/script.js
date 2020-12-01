@@ -1,11 +1,12 @@
 // TO DO LIST
 // create archive
-// data base or local storage
+// data base and local storage
 // grocery api
 // fix file structure 
 
 
 const input = document.getElementById("one-item");
+const archiveList = document.getElementById("all-items");
 
 input.addEventListener("keydown", function(e) {
     if (e.key == "Enter") {
@@ -27,14 +28,14 @@ function addItem() {
         h1.style.textDecoration = "line-through";
     })
 
-    var div = document.getElementById("all-items");
+    let div = document.getElementById("all-items");
     div.insertAdjacentElement("beforeend", h1);
 
 }
 
 function trashList() {
-    var list = document.getElementById("all-items");
-    var i = 0;
+    let list = document.getElementById("all-items");
+    let i = 0;
 
     while (i < list.childNodes.length) {
         list.removeChild(list.childNodes[i]);
@@ -42,6 +43,9 @@ function trashList() {
 }
 // figure out how to archive user's list by saving it via local storage. This will be helpful when internet is slow or down. 
 function archiveList() {
-    var list = document.getElementById("all-items");
+    let list = document.getElementById("all-items");
+    const data = {
+        groceryItem: archiveList.value
+    }
 
 }
