@@ -40,12 +40,18 @@ function trashList() {
     while (i < list.childNodes.length) {
         list.removeChild(list.childNodes[i]);
     }
-}
-// figure out how to archive user's list by saving it via local storage. This will be helpful when internet is slow or down. 
-function archiveList() {
-    let list = document.getElementById("all-items");
-    const data = {
-        groceryItem: archiveList.value
-    }
+    
+    localStorage.setItem('groceryList', list.innerHTML);
 
 }
+// figure out how to archive user's list by saving it via local storage. This will be helpful when internet is slow or down. 
+// function archiveList() {
+//     let list = document.getElementById("all-items");
+//     const data = {
+//         groceryItem: archiveList.value
+//     }
+
+// }
+
+// save localStorage
+// localStorage.setItem('groceryList', list.innerHTML);
